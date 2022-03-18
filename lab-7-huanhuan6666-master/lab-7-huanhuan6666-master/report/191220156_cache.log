@@ -1,0 +1,17 @@
+2021/06/08-10:10:25| [INFO] Caching server started
+Caching server serving on http://0.0.0.0:8176
+the cachetable is: {}
+the file of /doc/success.jpg isn't in cacheTbale!!!
+2021/06/08-10:10:28| [Info] Fetched '/doc/success.jpg' from main server '20.188.122.123:8888'
+add the /doc/success.jpg in cachetable
+do_GET and get headers: [('Content-type', 'image/jpeg'), ('Content-Length', '2125'), ('Last-Modified', 'Tue, 01 Jun 2021 11:14:49 GMT')]
+2021/06/08-10:10:28| [From 10.0.0.24:45172] "GET /doc/success.jpg HTTP/1.1" 200 -
+the cachetable is: {'/doc/success.jpg': <cachingServer.cacheTable.HTTPCacheItem object at 0x7f69b4e2bc18>}
+2021/06/08-10:10:29| [Info] the file of /doc/success.jpg is in cacheTbale!!!
+do_GET and get headers: [('Content-type', 'image/jpeg'), ('Content-Length', '2125'), ('Last-Modified', 'Tue, 01 Jun 2021 11:14:49 GMT')]
+2021/06/08-10:10:29| [From 10.0.0.24:45174] "GET /doc/success.jpg HTTP/1.1" 200 -
+the cachetable is: {'/doc/success.jpg': <cachingServer.cacheTable.HTTPCacheItem object at 0x7f69b4e2bc18>}
+the file of /noneexist isn't in cacheTbale!!!
+2021/06/08-10:10:30| [Error] File not found on main server '20.188.122.123:8888'
+2021/06/08-10:10:30| [From 10.0.0.24:45176] code 404, message 'File not found'
+2021/06/08-10:10:30| [From 10.0.0.24:45176] "GET /noneexist HTTP/1.1" 404 -
